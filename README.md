@@ -50,9 +50,9 @@ Sem autenticação, qualquer um pode se conectar ao broker e publicar mensagens.
 
 **Tente simular uma violação do pilar de Confidencialidade.**
 
-* Conecte-se ao broker sem autenticação.
-* Publique uma mensagem confidencial.
-* Use um sniffer de rede para capturar a mensagem em trânsito.
+* Digamos que o broker não foi muito bem configurado, que é possível conectar sem autenticação.
+* Conecte-se ao broker sem autenticação e usando '#' para ver todos os tópicos.
+* Veja todas as mensagens, dependo do servidor, será possível ver dados confidênciais.
 
 **Tente simular uma violação do pilar de Integridade.**
 
@@ -63,6 +63,7 @@ Sem autenticação, qualquer um pode se conectar ao broker e publicar mensagens.
 
 * Conecte-se ao broker com vários clientes e publique um grande volume de mensagens.
 * Observe o desempenho do broker e dos clientes.
+* Dependendo do números de requisições realizadas, é possível acabar com os recursos da maquina, memória por exemplo, e acabar derrubando o servidor.
 
 ## Conclusões
 
